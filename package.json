@@ -1,0 +1,50 @@
+{
+  "name": "baseball-scoreboard",
+  "version": "1.0.0",
+  "description": "MLB Baseball Scoreboard",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "NODE_ENV=server node server/index.js",
+    "lint": "eslint **/*.{js,jsx} --quiet",
+    "format": "prettier --write --single-quote --print-width=120 --tab-width=2 \"js/**/*.{js,jsx}\"",
+    "build": "NODE_ENV=development webpack -w",
+    "build:prod": "NODE_ENV=production webpack -p"
+  },
+  "author": "Matthew Terranova",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "node-sass": "^4.5.3",
+    "prettier": "^1.5.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.5.1"
+  },
+  "engines": {
+    "node": "7.9.0"
+  }
+}

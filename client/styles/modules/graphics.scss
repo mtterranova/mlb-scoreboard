@@ -1,0 +1,56 @@
+.graphics {
+	display: flex;
+	align-items: center;
+}
+
+.count {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.bases {
+	margin: 10px;
+	display: flex;
+	width: 60px;
+	transform: rotate(45deg);
+	flex-direction: row;
+	flex-wrap: wrap;
+	.base {
+		width: 25px;
+		height: 25px;
+		margin: 2px;
+		background-color: $grey;
+	}
+	.home {
+		background-color: transparent;
+	}
+}
+
+.BSO {
+	display: flex;
+}
+
+.greyDot {
+	border-radius: 5px;
+	background-color: $grey;
+	margin: 2px;
+	width: 10px;
+	height: 10px;
+}
+
+#action {
+	background-color: $action;
+}
+
+.matchup {
+	padding: 3px;
+	margin: 10px;
+	div {
+		padding: {
+			top: 5px;
+			bottom: 5px;
+		}
+	}
+}
